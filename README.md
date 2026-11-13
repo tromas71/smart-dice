@@ -26,12 +26,6 @@ I wanted a small project that combines electronics, firmware and mechanical desi
 2. The ESP32-C3 reads the sensor over I2C and works out which side points up from the direction of gravity.
 3. The ESP32-C3 runs as a **Wi-Fi access point**. The phone connects to it and opens the page that shows the rolled number.
 
-```
-MPU6050 --I2C--> ESP32-C3 Super Mini --Wi-Fi AP--> Phone
-                      ^
-                  Li-ion battery
-```
-
 ## Hardware
 
 | Part | Purpose |
@@ -46,42 +40,5 @@ Wiring: [add a wiring diagram or table here, e.g. SDA to GPIO x, SCL to GPIO y]
 
 The enclosure was modeled in **SolidWorks**. It is designed to hold the board, sensor and battery inside a dice shape.
 
-- STL file for printing: [`cad/print/smart-dice-case.stl`](cad/print/smart-dice-case.stl)
-- Material and settings: [e.g. PLA, 0.2 mm layer height, 20 % infill]
-- Iterations: [how many versions you printed and what you changed]
-
-![Inside view](images/renders/smart-dice-render-1.jpg)
-
-## How to use
-
-1. Turn the dice on.
-2. On your phone, connect to the Wi-Fi network named `[your SSID]` (password: `[password]`).
-3. Open `[address, e.g. 192.168.4.1]` in the browser.
-4. Roll the dice and read the result on your phone.
-
-## Build and flash the firmware
-
-- Board: ESP32-C3 (Super Mini)
-- Tools: [Arduino IDE / PlatformIO / ESP-IDF]
-- Libraries: [list libraries, e.g. for the MPU6050]
-- Source code is in [`firmware/`](firmware/)
-
-## What I learned
-
-- [Example: how to determine orientation from accelerometer data]
-- [Example: how to fit electronics and a battery into a small printed enclosure]
-- [Example: a problem you hit and how you solved it]
-
-## Possible improvements
-
-- [Example: battery charging circuit, custom PCB, power-saving sleep mode]
-
-## Repository structure
-
-- `firmware/` code for the ESP32-C3
-- `cad/` SolidWorks sources, STEP and STL files
-- `images/` renders and photos
-
-## License
-
-[MIT or other license, or "All rights reserved"]
+- STL file for printing: [`models/smart-dise.STL`](models/smart-dise.STL)
+- Material and settings: [PLA, 0.2 mm layer height, 20 % infill]
