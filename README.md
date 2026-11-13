@@ -1,6 +1,6 @@
 # Smart Dice
 
-![Smart dice render](images/smart-dice(1).jpg)
+![Smart dice render](images/smart-dice(1).JPG)
 
 A 3D-printed dice with electronics inside. It detects which side is facing up and shows the result on your phone. The dice creates its own Wi-Fi network, so no router or internet is needed.
 
