@@ -34,8 +34,6 @@ I wanted a small project that combines electronics, firmware and mechanical desi
 | MPU6050 breakout board | Accelerometer and gyroscope for detecting the top side |
 | Small Li-ion battery | Power supply |
 
-Wiring: [add a wiring diagram or table here, e.g. SDA to GPIO x, SCL to GPIO y]
-
 ## Mechanical design and 3D printing
 
 The enclosure was modeled in **SolidWorks**. It is designed to hold the board, sensor and battery inside a dice shape.
